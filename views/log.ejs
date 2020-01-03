@@ -1,0 +1,71 @@
+
+
+
+<html>
+<head>
+<link rel='stylesheet' href='/stylesheets/student.css' />
+<title>student Sign up</title>
+</head>
+<body>
+<div>
+  <form class="" action="" method="post">
+    <h1><%= title %></h1>
+  
+
+        <label for="fname">Username</label><br>
+        <input type="text" id="us" name="uname"  value="<%= row.username %>" placeholder="create username" required><br>
+
+        <label for="lname">Password</label><br>
+        <input type="text" id="psw" name="pass" value="<%= row.password %>" placeholder="create password" required><br>
+
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." value="<%= row.fname %>" required><br>
+
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." value="<% row.lname %>"required><br>
+
+        <label for="mob">Email</label><br>
+        <p><%= records.email %> jj</p>
+
+        <label for="mob">Mobile Number</label><br>
+        <input type="text" id="mob" name="mob" value="<% row.mobnumber %>"required><br>
+
+        <label for="mob">Caste</label><br>
+        <input type="text" id="mob" name="caste" value="<% row.caste %>" required><br>
+
+        <label for="income">City</label><br>
+        <input type="text" id="city" name="city" value="<% row.city %>"required><br><br>
+
+
+        <label for="income">Annual Income</label><br>
+        <input type="text" id="income" name="income" value="<% row.income %>"required><br><br>
+
+
+        <label for="age">Highest Education </label><br>
+        <input type="text" id="age" name="edu" value="<% row.edu %>" ><br>
+
+        <label for="x">X Standard Marks</label><br>
+        <input type="text" id="xii" name="xii"  value="<% row.marks1 %>" required><br>
+
+
+        <label for="xii">XII Standard Marks</label><br>
+        <input type="text" id="xii" name="xii"  value="<% row.marks2 %>" required><br>
+
+        <label for="age">Age</label><br>
+        <input type="text" id="age" name="age" value="<% row.age %>" required><br>
+
+        <label for="x">Disability</label><br>
+        <input type="text" id="x" name="disability" value="<% row.disability %>" required><br>
+
+
+       <input type="submit" value="Submit" >
+
+       <% }) } %>
+
+      </form>
+    </div>
+
+
+
+</body>
+</html>

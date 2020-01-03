@@ -1,0 +1,139 @@
+
+
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/student1.css">
+<title>student Sign up</title>
+</head>
+<body>
+<div>
+      <label for="fname">Username</label><br>
+    <input type="text" id="us" name="firstname" placeholder="create username" required><br>
+
+    <label for="lname">Password</label><br>
+    <input type="text" id="psw" name="lastname" placeholder="create password" required><br>
+
+    <label for="fname">First Name</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." require><br>
+
+    <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br>
+
+    <label for="email">Email Address</label><br>
+    <input type="text" id="email" name="email" required><br>
+
+    <label for="mob">Mobile Number</label><br>
+    <input type="text" id="mob" name="mob" required><br>
+
+
+    <label for="caste">Caste</label><br>
+    <select id="caste" name="caste">
+      <option value="open">Open</option>
+      <option value="obc">OBC</option>
+      <option value="vjnt">VJNT</option>
+      <option value="sbc">SBC</option>
+      <option value="st">ST</option>
+      
+     
+
+
+      <label for="gender">Gender</label>
+    <select id="gender" name="gender">
+      
+     <br> Gender<br>
+          
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br> <br>
+
+    <label for="disability">Disability<br></label>
+          
+    <input type="radio" name="disability" value="no" checked> No<br>
+    <input type="radio" name="disability" value="yes"> Yes<br><br>
+
+    <label for="city">City</label><br>
+    <input type="text" id="city" name="city" required><br>
+
+    <label for="income">Family Income</label><br>
+    <input type="text" id="income" name="income" required><br><br>
+
+    <label for="class">Class<br></label>
+          
+    <input type="radio" name="class" value="fe" checked> FE<br>
+    <input type="radio" name="class" value="se"> SE<br>
+    <input type="radio" name="class" value="te"> TE<br>
+    <input type="radio" name="class" value="be"> BE<br><br>
+
+    <label for="x">X Standard Marks</label><br>
+    <input type="text" id="x" name="x" required><br>
+
+    <label for="xii">XII Standard Marks</label><br>
+    <input type="text" id="xii" name="xii" required><br>
+    
+    <label for="age">Age</label><br>
+    <input type="text" id="age" name="age" required><br>
+
+
+    </select>
+  
+    <input type="submit" value="Submit"  id="demo" onclick="myFunction()" >
+  
+  </form>
+</div>
+
+
+<script>
+
+function myFunction() {
+  var caste=document.getElementById("caste").value;
+  var income=document.getElementById("income").value;
+  if(caste=="open")
+  {
+    document.location.href="open.html";
+
+  }
+  else  if(caste=="obc" && income<100000)
+  {
+    document.location.href="obc.html";
+
+  } 
+  else  if(caste=="obc" && income>100000 && income<800000)
+  {
+    document.location.href="obc1.html";
+
+  } 
+  
+  else  if(caste=="vjnt" && income<100000)
+  {
+    document.location.href="vjnt.html";
+
+  } 
+  else  if(caste=="vjnt" && income>100000 && income<800000)
+  {
+    document.location.href="vjnt1.html";
+
+  } 
+  
+  else  if(caste=="sbc" && income<100000)
+  {
+    document.location.href="sbc.html";
+
+  } 
+  else  if(caste=="sbc" && income>100000 && income<800000)
+  {
+    document.location.href="sbc1.html";
+
+  } 
+   else  if(caste=="st")
+  {
+    document.location.href="st.html";
+
+  } 
+}
+  
+</script>
+
+</body>
+</html>
+
